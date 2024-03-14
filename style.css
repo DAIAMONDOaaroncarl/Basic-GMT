@@ -119,20 +119,21 @@
 
 /* GRID */
 /* DESKTOP VIEW */
-/* .container{
+.container{
 
-    background:var(--dark);
+    background:transparent;
     max-width:150rem;
     margin:0 auto;
     padding:1.5rem;
     width:100%;
 
-} */
+}
 
 
 /* HEADER */
 .header{
-    background:var(--dark);
+    background:transparent;
+    padding:2rem;
     position:relative;
     position:fixed;
     width:100%;
@@ -242,6 +243,14 @@
   .burgir_menu{
     display:block;
   }
+}
+
+ /* BANNER */
+ .banner{
+  background-image:url("/img/banner_home_v1.jpg");
+  background-size:cover;
+  height:100vh;
+  background-position:center center;
 }
 
 
