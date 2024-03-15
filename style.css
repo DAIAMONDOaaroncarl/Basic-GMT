@@ -309,8 +309,8 @@
 }
 .banner_text p{
   color:var(--light);
-  font-size:1.5rem;
-  text-align: center;
+  font-size:2rem;
+
 }
 .banner_text ul.dutdot{
   display:flex;
@@ -349,7 +349,6 @@
 .offer{
   background-cover:var(--light);
   padding:2rem
-
 }
 .offer_text h2 {
   font-size:5rem;
@@ -361,6 +360,7 @@
   flex-direction:column;
   gap:4rem;
   max-width:65rem;
+  margin:0 auto;
 }
 .offer_text h2{
   font-size:5rem;
@@ -419,15 +419,109 @@ justify-content: flex-end;
   text-align: center;
   font-size: 4rem;
 }
-.btn.bg--primary ul.but{
+.offer_text ul.but{
+  display:flex;
+  flex-direction: column;
   text-align: center;
 }
-.btn.bg--primary ul.but li a{
-  width:100%;
-}
+.offer_text ul.but li a{
+  width:90%
 }
 
+}
+/* HOW */
+.how{
+  background:var(--primary);
+  
 
+}
+.how_wrapper{
+  display:grid;
+  grid-template-columns:2fr 2fr;
+  min-height: 500px;
+}
+.how_ate{
+  background-image:url("img/different_img.jpg");
+  background-size:cover;
+  background-position:center center;
+  height:100%;
+
+}
+.how_text{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap:2rem;
+  max-width: 75rem;
+  margin:0 auto;
+}
+.how_text h2{
+  color:var(--light);
+  font-size: 4rem;
+  font-weight:600;
+}
+.how_text p{
+  color:var(--light)
+}
+
+@media screen and (max-width:500px) {
+  .how_wrapper{
+  grid-template-columns: none;
+  text-align: center;
+  justify-content: center;
+  }
+  .how_ate{
+  display:none;
+}
+.how_text ul.bun{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+}
+.how_text ul.bun li a{
+  width: 375px;
+}
+
+}
+
+/* RECOMMEND SECTION */
+.recommend_wrapper{
+  background-cover:var(--light);
+  padding:2rem;
+  grid-template-columns: none;
+  text-align: center;
+}
+.recommend_text h2{
+  display:flex;
+  font-size:4rem;
+  font-weight:600;
+  color:var(--primary);
+  gap:2rem;
+  flex-direction: column;
+  margin: auto;
+  padding:100px 20px
+}
+.recommend_text h5 {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 4rem;
+  max-width: 45rem;
+  margin: 0;
+  text-align: center;
+  padding:100px 20px
+}
+
+@media screen and (max-width:500px){
+  .recommend_text ul.bun{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .recommend_text ul.bun li a{
+    width: 375px;
+  }
+}
 /* REPEATABLE PATTERNS */
 :root{
     --light:#ffffff;
@@ -470,3 +564,6 @@ font-weight:600;
   font-size:1.5rem;
   font-weight:600;
 }
+
+
+
