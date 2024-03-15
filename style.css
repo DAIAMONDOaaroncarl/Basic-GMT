@@ -287,7 +287,7 @@
   transition:.5s ease;
 }
 .banner_text ul.social{
-  display:felx;
+  display:flex;
   align-items:center;
   gap:2rem;
 }
@@ -331,7 +331,7 @@
   .banner_text ul.dutdot li a{
     width:80%
   }
-  .banner_text ul.dutdot li a{
+  .banner_text ul.social{
     justify-content: center;
   }
   .banner_faq{
